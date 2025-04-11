@@ -1,0 +1,33 @@
+[pyprland]
+
+plugins = [
+  "scratchpads",
+  "magnify",
+  "monitors"
+]
+
+[scratchpads.term]
+animation = "fromTop"
+command = "alacritty --class alacritty-dropterm"
+class = "alacritty-dropterm"
+size = "75% 60%"
+
+[scratchpads.volume]
+animation = "fromTop"
+command = "pavucontrol"
+class = "org.pulseaudio.pavucontrol"
+size = "40% 90%"
+unfocus = "hide"
+lazy = true
+
+[monitors.placement."Dell"]
+rate = 120 
+scale = 1
+rightOf = "DP-4"
+resolution = "2460x1440"
+
+[monitors.placement."Samsung"]
+rightOf = "DP-4"
+rate = 60
+resolution = "3840x2160"
+scale = 1

@@ -1,0 +1,18 @@
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[general]
+import = [
+    "~/.config/alacritty/wallust-alacritty.toml"
+]
+

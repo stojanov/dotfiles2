@@ -1,0 +1,17 @@
+[main]
+thread_count = 2
+
+[[control]]
+name = "nvidia_gpu_cooler_fan"
+interval = 500
+src_path = "/usr/bin/gpu_usage"
+src_args = [ "temp" ]
+src_type = "program"
+dest_path = "/sys/class/hwmon/hwmon10/pwm4"
+dest_min = 0
+dest_max = 255
+points = [
+    [40, 25],
+    [60, 50],
+    [90, 100],
+]
