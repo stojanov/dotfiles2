@@ -18,5 +18,5 @@ if [ -n "$wallpaper_value" ]; then
     hyprctl hyprpaper reload ,"$wallpaper_value"
     wallust run "$wallpaper_value"
 else
-    echo "Wallpaper property not found"
+    notify-send "Wallpaper property not found"
 fi
